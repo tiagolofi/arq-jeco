@@ -20,21 +20,26 @@ Arquitetura Jejequiana para Desenvolvimento de Software
 ### Design Pattern - Transaction Script
 
 #### Estrutura de Pastas
+```shell
 - app.py
 - Procfile
 - requirements.txt
 - static/
 - templates/
-- "source/src" or name-project/
+- source or src or name-project/
   - services/
-      - "name service endpoint".py
+      - __init__.py
+      - name service endpoint.py
   - utils/
+      - __init__.py
   - models/
-      - "name object bussiness".py
+      - __init__.py
+      - name object bussiness.py
   - database/
+      - __init__.py
       - auth.py
       - insert.py
       - read.py
       - delete.py
       - update.py
- 
+ ```
