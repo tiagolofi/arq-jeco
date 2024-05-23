@@ -29,7 +29,7 @@ Arquitetura Jejequiana para Desenvolvimento de Software
   - services/
       - "name service endpoint".py
   - utils/
-  - objects/
+  - models/
       - "name object bussiness".py
   - database/
       - auth.py
