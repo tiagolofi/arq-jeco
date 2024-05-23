@@ -22,10 +22,19 @@ Arquitetura Jejequiana para Desenvolvimento de Software
 #### Estrutura de Pastas
 - app.py
 - Procfile
-- requirements
+- requirements.txt
 - static/
 - templates/
-- services/
-- utils/
-- database/
-- objects/
+- "source/src" or name-project/
+  - services/
+      - "name service endpoint".py
+  - utils/
+  - objects/
+      - "name object bussiness".py
+  - database/
+      - auth.py
+      - insert.py
+      - read.py
+      - delete.py
+      - update.py
+ 
