@@ -26,7 +26,7 @@ Arquitetura Jejequiana para Desenvolvimento de Software
 - requirements.txt
 - static/
 - templates/
-- source or src or name-project/
+- src or name-project/
   - services/
       - __init__.py
       - name service endpoint.py
