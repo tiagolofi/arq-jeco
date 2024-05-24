@@ -4,7 +4,9 @@ Arquitetura Jejequiana para Desenvolvimento de Software
 ## Devops
 
 ### Heroku Pipelines
-![alt text](image.png)
+![](img/heroku-pipelines.png)
+São estruturas que agrupam aplicações de um mesmo projeto, fornecendo uma visão "___staging x production___" que favorece no desenvolvimento, na aplicação de testes e entrega de uma aplicação funcional.
+
 ### CI/CD
 A branch "___develop___" abrange o desenvolvimento da aplicação, bem como os testes de integração da mesma. Sendo vinculada à uma aplicação heroku específica, sem prejuízo ao cliente/usuário.
 
@@ -14,40 +16,67 @@ _Features_ (novas funcionalidades) deverão ser adicionadas a partir da última 
 
 Para o caso de bibliotecas e microsserviços, deverá ser utilizado o padrão "**Major-Minor-Patch**" para as releases.
 
-### Ambientes de Integração Contínua
+### Configuração do ambiente de integração contínua
+> Aplicação (Develop) -> Deploy -> Automatic deploys
+
+[<img src="img/set-branch.png" width="300"/>]()
+[<img src="img/automatic-deploy.png" width="355"/>]()
 
 ## Banco de Dados
 
-### MongoDB Atlas
+### MongoDB Atlas + PyMongo (wrapper mongo)
+
+> "_An integrated suite of cloud database and data services to accelerate and simplify how you build with data._"
+
+1. Criação de um projeto
+
+[<img src="img/project-mongo.png" width="60%"/>]()
+
+2. Configuração de um Cluster M0 Free
+
+[<img src="img/cluster-mongo.png" width="60%"/>]()
+
+3. Criação de um usuário e definição de privilégios
+
+[<img src="img/user-mongo.png" width="60%"/>]()
+
+**OBS**: salvar as secrets no arquivo _.env_
+
+4. Configuração de IP Access (Network Access)
+
+[<img src="img/ip-access-mongo.png" width="60%"/>]()
 
 ## Codificação
 
-### Flask e PyMongo
+### Flask
 
 ### Design Pattern - Transaction Script
+
+
+
+### Outras implementações
+**Logging** - submódulos a nível de modelo devem implementar uma interface de logging
+
+**Exceptions** - Submódulos devem implementar suas próprias regras de exceção com o tratamento da exception. A aplicação se encarregará de sanitizar os erros apenas de nível negocial.
+
+**Utilitários** - devem ser implementados junto com a classe modelo. Também pode ser implementados no mesmo submódulo, desde que identificados como "_utils.py_".
 
 #### Estrutura de Pastas
 ```
 - app.py
 - Procfile
+- .env
 - requirements.txt
 - static/
 - templates/
 - src or name-project/
   - testes/
+  - logs/
+  - exceptions/
   - services/
-      - __init__.py
       - name service endpoint.py
-  - utils/
-      - __init__.py
   - models/
-      - __init__.py
       - name object bussiness.py
+      - utils.py
   - database/
-      - __init__.py
-      - auth.py
-      - insert.py
-      - read.py
-      - delete.py
-      - update.py
  ```
