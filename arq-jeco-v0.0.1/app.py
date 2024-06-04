@@ -1,5 +1,19 @@
 
-from example.models.email import Email
+from flask import Flask, jsonify, request
+from dotenv import load_dotenv
 
-e = Email('jejeco75@gmmail.com')
-print(e)
+from main.services import Cadastro
+
+load_dotenv()
+app = Flask(__name__)
+
+app.route('/register', methods = ['POST'])
+def register():
+    cadastro = Cadastro(request.form['email'], request.form['password'])
+    cadastro.salvarCadastro()
+    return jsonify(
+        {'msg': 'Deu certo'}
+    )
+
+if __name__ == '__main__':
+    app.run(debug = True)

@@ -55,28 +55,31 @@ Para o caso de bibliotecas e microsserviços, deverá ser utilizado o padrão "*
 
 
 ### Outras implementações
-**Logging** - submódulos a nível de modelo devem implementar uma interface de logging
+**Logging** - Submódulo a nível de modelo devem implementar uma interface de logging;
 
-**Exceptions** - Submódulos devem implementar suas próprias regras de exceção com o tratamento da exception. A aplicação se encarregará de sanitizar os erros apenas de nível negocial.
+**Hashing** - Submódulo voltado para criação de hashs irreversíveis;
 
-**Utilitários** - devem ser implementados junto com a classe modelo. Também pode ser implementados no mesmo submódulo, desde que identificados como "_utils.py_".
+**Exceptions** - Submódulo devem implementar suas próprias regras de exceção com o tratamento da exception. A aplicação se encarregará de sanitizar os erros apenas de nível negocial;
+
+**Utilitários** - Submódulos que implementam funções ou classes auxiliares.
 
 #### Estrutura de Pastas
 ```
 - app.py
+- teste.py
 - Procfile
 - .env
 - requirements.txt
 - static/
 - templates/
 - src or name-project/
-  - testes/
+  - hashing/
+  - utils/
   - logs/
   - exceptions/
   - services/
       - name service endpoint.py
   - models/
       - name object bussiness.py
-      - utils.py
   - database/
  ```

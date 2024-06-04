@@ -1,0 +1,2 @@
+
+from .cadastro import Cadastro
