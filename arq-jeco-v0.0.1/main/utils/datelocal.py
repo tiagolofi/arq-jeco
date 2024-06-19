@@ -11,4 +11,4 @@ class DateLocal:
     UTC_INT = int(datetime.now().timestamp())
     UTC_STR = datetime.now().strftime('%Y-%m-%d %H-%M-%S')
     BR_INT = int(datetime.now(timezone(timedelta(hours = -3))).timestamp())
-    BR_STR = datetime.now(timezone(timedelta(hours = -3))).strftime('%Y-%m-%d %H-%M-%S')
+    BR_STR = datetime.now(timezone(timedelta(hours = -3))).strftime('%Y-%m-%d %H:%M:%S')

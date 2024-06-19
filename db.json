@@ -1,0 +1,33 @@
+[
+  {
+    "token_id": "nD5Oz3VTNRIl",
+    "email": "jejecox75@gmail.com",
+    "nome": "Jejeco",
+    "datahora": "2024-06-19 01:12:49",
+    "salt": "yLmjB1v",
+    "credencial": "a10d68f30cf151824399ba018a9873b16f5faa0f7deacac287838c9ac5d4bd34",
+    "headers": {
+      "Host": "127.0.0.1:5000",
+      "User-Agent": "python-requests/2.32.3",
+      "Accept-Encoding": "gzip, deflate",
+      "Accept": "*/*",
+      "Connection": "keep-alive",
+      "Content-Length": "63",
+      "Content-Type": "application/x-www-form-urlencoded"
+    }
+  },
+  {
+    "email": "jejecox75@gmail.com",
+    "datahora": "2024-06-19 01:12:49",
+    "auth": true,
+    "headers": {
+      "Host": "127.0.0.1:5000",
+      "User-Agent": "python-requests/2.32.3",
+      "Accept-Encoding": "gzip, deflate",
+      "Accept": "*/*",
+      "Connection": "keep-alive",
+      "Content-Length": "51",
+      "Content-Type": "application/x-www-form-urlencoded"
+    }
+  }
+]
