@@ -66,10 +66,10 @@ Para o caso de bibliotecas e microsserviços, deverá ser utilizado o padrão "*
 #### Estrutura de Pastas
 ```
 - app.py
-- teste.py
 - Procfile
 - .env
 - requirements.txt
+- testes/
 - static/
 - templates/
 - src or name-project/
@@ -83,3 +83,8 @@ Para o caso de bibliotecas e microsserviços, deverá ser utilizado o padrão "*
       - name object bussiness.py
   - database/
  ```
+## TODO
+
+arquivo run.sh
+testes
+arquivo de logs
