@@ -6,7 +6,7 @@ import json
 response = requests.post(
     'http://127.0.0.1:5000/register',
     data = {
-        'email': 'jejecox75@gmail.com',
+        'email': 'jejecox@blob.com',
         'password': 'mengao7x0vasco',
         'nome': 'Jejeco'
     }
@@ -15,7 +15,7 @@ response = requests.post(
 response = requests.post(
     'http://127.0.0.1:5000/login',
     data = {
-        'email': 'jejecox75@gmail.com',
+        'email': 'jejecox@blob.com',
         'password': 'mengao7x0vasco' 
     }
 )
