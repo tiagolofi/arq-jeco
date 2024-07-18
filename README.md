@@ -1,6 +1,12 @@
 # arq-jeco
 Arquitetura Jejequiana para Desenvolvimento de Software
 
+## Ideias
+- criar um serviço de webhook
+- criar um sistema de feedback
+- criar um sistema de almoxarifado
+- criar um sistema de controle de pedidos/balcão para lanchonete
+
 ## Devops
 
 ### Heroku Pipelines
