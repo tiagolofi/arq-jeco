@@ -1,5 +1,5 @@
 # arq-jeco
-Arquitetura Jejequiana para Desenvolvimento de Software
+Arquitetura Jejequiana para Desenvolvimento de Software em Python [EM DESENVOLVIMENTO]
 
 ## Ideias
 - criar um serviço de webhook
